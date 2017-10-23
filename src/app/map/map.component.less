@@ -1,0 +1,32 @@
+:host {
+  display: block;
+}
+:host {
+  display: block;
+
+  /deep/ * {
+    &.background {
+      fill: none;
+      pointer-events: all;
+    }
+    &.feature {
+      fill: #ccc;
+      cursor: pointer;
+    }
+    
+    &.notfeature {
+      fill: #f1f1f1;
+    }
+    
+    &.feature.active {
+      fill: orange;
+    }
+    
+    &.mesh {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+}
